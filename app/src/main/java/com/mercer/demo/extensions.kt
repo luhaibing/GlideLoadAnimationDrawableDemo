@@ -1,10 +1,13 @@
 package com.mercer.demo
 
+import com.aiper.mercer.glide.loader.LoadingDrawable
 import com.airbnb.lottie.LottieAnimationView
 import com.opensource.svgaplayer.SVGAImageView
 import com.opensource.svgaplayer.SVGAParser
 import com.opensource.svgaplayer.SVGAVideoEntity
+import java.math.BigInteger
 import java.net.URL
+import java.security.MessageDigest
 
 /**
  * @author :Mercer
@@ -45,3 +48,14 @@ fun SVGAImageView.loadFromURL(source: String) {
         }
     })
 }
+
+
+fun String.toMd5(): String {
+    val md = MessageDigest.getInstance("MD5")
+    return BigInteger(1, md.digest(toByteArray())).toString(16).padStart(32, '0')
+}
+
+val Any.md5: String
+    get() {
+        return this.toString().toMd5()
+    }

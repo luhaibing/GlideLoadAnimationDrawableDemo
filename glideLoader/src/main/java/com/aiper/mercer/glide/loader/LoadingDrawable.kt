@@ -1,4 +1,4 @@
-package com.mercer.demo
+package com.aiper.mercer.glide.loader
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter

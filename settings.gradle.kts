@@ -22,4 +22,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "GlideLoadAnimationDrawableDemo"
 include(":app")
- 
+include(":glideLoader")
