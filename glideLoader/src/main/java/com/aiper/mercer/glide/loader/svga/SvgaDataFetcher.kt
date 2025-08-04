@@ -1,13 +1,13 @@
 package com.aiper.mercer.glide.loader.svga
 
 import android.content.Context
+import android.os.Parcel
 import android.util.Log
 import com.aiper.mercer.glide.loader.md5
 import com.blankj.utilcode.util.LogUtils
 import com.bumptech.glide.Priority
 import com.bumptech.glide.load.DataSource
 import com.bumptech.glide.load.data.DataFetcher
-import com.caverock.androidsvg.SVG
 import com.opensource.svgaplayer.SVGADrawable
 import com.opensource.svgaplayer.SVGAParser
 import com.opensource.svgaplayer.SVGAVideoEntity
@@ -19,7 +19,6 @@ import okhttp3.Response
 import okio.Buffer
 import java.io.File
 import java.io.IOException
-import java.net.URL
 
 
 /**
